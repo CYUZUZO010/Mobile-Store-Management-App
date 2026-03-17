@@ -1,0 +1,29 @@
+{
+  "name": "mobile-store-management-app",
+  "version": "1.0.0",
+  "description": "A React Native mobile application for the SmartStorePay system, providing interfaces for agents, salespersons, and system administrators.",
+  "homepage": "https://github.com/Herve-ndzye/Mobile-Store-Management-App#readme",
+  "bugs": {
+    "url": "https://github.com/Herve-ndzye/Mobile-Store-Management-App/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Herve-ndzye/Mobile-Store-Management-App.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "expo-linear-gradient": "^55.0.8",
+    "expo-router": "^55.0.5",
+    "react-native-safe-area-context": "^5.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14"
+  }
+}
