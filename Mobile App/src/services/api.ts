@@ -1,7 +1,8 @@
 import io from "socket.io-client";
 
 // Update this if the backend IP changes
-export const BASE_URL = "http://10.11.74.149:8255";
+// Use your computer's local network IP (found via ipconfig)
+export const BASE_URL = "http://10.12.74.24:8255";
 
 export const socket = io(BASE_URL, {
     autoConnect: false,

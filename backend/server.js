@@ -637,7 +637,7 @@ io.on('connection', (socket) => {
 
 server.listen(PORT, '0.0.0.0', async () => {
   console.log(`Backend server running on http://0.0.0.0:${PORT}`);
-  console.log(`Access from: http://157.173.101.159:${PORT}`);
+  console.log(`Access from: http://192.168.56.1:${PORT}`);
   
   // Wait for MongoDB connection to be ready
   let attempts = 0;

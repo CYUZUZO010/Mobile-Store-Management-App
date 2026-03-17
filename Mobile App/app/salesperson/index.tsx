@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ActivityIndicator, Alert, SafeAreaView, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ActivityIndicator, Alert, ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Stack } from 'expo-router';
 import { api, socket, connectSocket, disconnectSocket } from '../../src/services/api';
 
@@ -16,11 +17,14 @@ export default function SalespersonScreen() {
 
     const loadProducts = async () => {
         try {
+            console.log('Loading products from API...');
             const prods = await api.getProducts();
+            console.log('Products loaded:', prods.length, 'items');
             setProducts(prods);
             setStatus('Select a product to start');
-        } catch (error) {
-            Alert.alert('Error', 'Failed to load products');
+        } catch (error: any) {
+            console.error('Failed to load products:', error.message || error);
+            Alert.alert('Error', `Failed to load products: ${error.message || 'Unknown error'}`);
             setStatus('Failed to load products');
         }
     };
