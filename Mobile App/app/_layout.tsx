@@ -8,5 +8,6 @@ export default function RootLayout() {
             <Stack.Screen name="salesperson/index" options={{ title: 'Sales Dashboard', headerStyle: { backgroundColor: '#0A0E1A' }, headerTintColor: '#00E5FF' }} />
             <Stack.Screen name="dashboard/index" options={{ title: 'System Dashboard', headerStyle: { backgroundColor: '#0A0E1A' }, headerTintColor: '#00E5FF' }} />
         </Stack>
+        
     );
 }
