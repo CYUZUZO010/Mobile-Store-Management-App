@@ -43,8 +43,6 @@ export default function DashboardScreen() {
         connectSocket();
 
         const handleTxUpdate = (tx: any) => {
-            // Optimistically append new tx to the top
-            // And refresh the exact overall stats
             fetchData();
         };
 
