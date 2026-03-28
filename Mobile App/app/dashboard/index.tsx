@@ -15,7 +15,6 @@ export default function DashboardScreen() {
     const [recentTx, setRecentTx] = useState<any[]>([]);
 
     const fetchData = async () => {
-        
         try {
             const data = await api.getDashboardStats();
 
